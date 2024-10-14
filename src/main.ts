@@ -11,4 +11,4 @@ customer.activate();
 const item1 = new OrderItem("1", "Alicate de pressão", 10);
 const item2 = new OrderItem("2", "Trena 5 metros", 20);
 
-cons Order = new Order("1", "123", [item1, item2]);
+const order = new Order("1", "123", [item1, item2]);
