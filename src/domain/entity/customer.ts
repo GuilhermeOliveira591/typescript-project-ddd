@@ -7,6 +7,7 @@ export default  class Customer{
     private _address!: Address;
     // nomeVariavel! -> quer dizer que vai inicializar em branco
     private _active: boolean = true;
+    private _rewardPoints: number = 0;
 
     constructor(id:string, name:string) {
         this._id = id;
@@ -16,6 +17,18 @@ export default  class Customer{
 
     get name(): string {
         return this._name;
+    }
+
+    get id(): string {
+        return this._id;
+    }
+
+    get address(): Address {
+        return this._address;
+    }
+
+    get rewardPoints(): number {
+        return this._rewardPoints;
     }
 
     validate() {
@@ -53,6 +66,12 @@ export default  class Customer{
     isActive(): boolean {
         return this._active;
     }
+
+    addRewardPoints (points: number) {
+        this._rewardPoints += points;
+    }
+
+
 
 
 }
