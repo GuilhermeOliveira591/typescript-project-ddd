@@ -23,12 +23,16 @@ export default  class Customer{
         return this._id;
     }
 
-    get address(): Address {
+    get Address(): Address {
         return this._address;
     }
 
     get rewardPoints(): number {
         return this._rewardPoints;
+    }
+
+    set Address(address: Address){
+        this._address = address;
     }
 
     validate() {
