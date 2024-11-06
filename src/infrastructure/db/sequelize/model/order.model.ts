@@ -7,7 +7,7 @@ import OrderItemModel from "./order-item.model";
     timestamps: false,
 })
 
-export default class OrderModel extends Model{
+export default class OrderModel extends Model {
 
     @PrimaryKey
     @Column
